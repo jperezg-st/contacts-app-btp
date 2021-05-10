@@ -26,27 +26,27 @@
 			<div class="hero-info">
 				<h1 class="name">{{ contact.name | title }}</h1>
 			</div>
+			<div class="hero-info">
+				<h1 class="last_name">{{ contact.last_name | title }}</h1>
+			</div>
 		</header>
 
 		<section class="contact-info">
+			<div class="info-line">
+				<i class="fas fa-map-marker-alt icon-gradient"></i>
+				<p class="phone-number">{{ contact.company}}</p>
+			</div>
 
 			<div class="info-line">
 				<i class="fas fa-phone icon-gradient"></i>
 				<p class="phone-number">{{ contact.phone_number }}</p>
 			</div>
 
-
 			<div class="info-line">
-				<i class="fas fa-sms icon-gradient"></i>
+				<i class="fas fa-envelope icon-gradient"></i>
 				<p class="sms">{{ contact.email }}</p>
 			</div>
-
-
-
-
-
 		</section>
-
 
 		<a href="{% url 'edit-contact' contact.id %}">
 			<section class="edit-contact">
@@ -55,9 +55,7 @@
 				</div>
 			</section>
 		</a>
-
 	</div>
-
 </body>
 
 </html>

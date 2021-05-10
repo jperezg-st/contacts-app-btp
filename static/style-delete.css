@@ -34,16 +34,6 @@ body{
 	align-items: center;
 }
 
-.relationship-hero{
-	width: 5em;
-	text-align: center;
-	padding: .4em .5em;
-	border-radius: 100px;
-	border-top-left-radius: 0;
-	margin: 0;
-	background-color: #75A85E;
-}
-
 
 .delete-container{
 	background-color: #313438;

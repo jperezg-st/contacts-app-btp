@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from .models import Contact
+from django.db.models import Q
 
 # Create your views here.
 
@@ -7,7 +8,7 @@ def index(request):
     contacts = Contact.objects.all()
     search_input = request.GET.get('search-area')
     if search_input:
-        contacts = Contact.objects.filter(name__icontains=search_input)
+        contacts = Contact.objects.filter(Q(name__icontains=search_input) | Q(last_name__icontains=search_input))
     else:
         contacts = Contact.objects.all()
         search_input = ''
