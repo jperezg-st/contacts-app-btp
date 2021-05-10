@@ -1,1 +1,1 @@
-web: gunicorn contacts-app-btp.wsgi
+web: gunicorn contacts-app-btp.wsgi --log-file -
