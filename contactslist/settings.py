@@ -26,7 +26,7 @@ SECRET_KEY = 'lqzo%=5tyvuk8w7=1$1sl!ry4^-r2jg*8q0y4ymwee89)aavf#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['contacts-app-btp.herokuapp.com']
 
 
 # Application definition
